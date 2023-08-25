@@ -28,6 +28,7 @@ import Gallery from './component/Gallery';
 import Company from './component/Company';
 import Edit from './component/Edit';
 import Edit2 from './component/Edit2';
+import UseEffect from './component/UseEffect';
 
 
 function App() {
@@ -66,6 +67,9 @@ function App() {
         <li>
           <button onClick={ () => {navigate(-1)}}> 이전 페이지로 이동</button>
         </li>
+        <li>
+          <Link to ="/useEffect"> useEffect 예제 호출</ Link>
+        </li>
         </ul>
       </nav>
 
@@ -76,7 +80,7 @@ function App() {
       <Route path="/company" element = {<Company />}></Route>
       <Route path="/edit/:id" element = {<Edit />}></Route>
       <Route path="/edit2" element = {<Edit2 />}></Route>
-
+      <Route path="/useEffect" element = {<UseEffect />}></Route>
       </Routes>
     
 
